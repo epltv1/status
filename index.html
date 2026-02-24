@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol-X | System Status</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top center, #1e293b 0%, #0f172a 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.07);
+            transform: translateY(-2px);
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+
+        .status-pulse {
+            position: relative;
+            display: flex;
+            height: 10px;
+            width: 10px;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-200 flex flex-col items-center justify-center p-4">
+
+    <div class="w-full max-w-md">
+        <div class="text-center mb-12">
+            <div class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-4">
+                Operational
+            </div>
+            <h1 class="text-5xl font-extrabold text-white tracking-tighter italic">FUTBOL-X</h1>
+            <p class="text-slate-400 mt-3 text-sm tracking-wide">Global Platform Status</p>
+        </div>
+
+        <div class="space-y-4">
+            
+            <a href="https://futbol-x.site" target="_blank" class="glass-card flex items-center justify-between p-5 rounded-2xl group">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform">
+                        🌍
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white">Main Website</h3>
+                        <p class="text-xs text-slate-500">futbol-x.site</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20">
+                    <span class="status-pulse">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-emerald-400 text-[10px] font-black uppercase tracking-tighter">Live</span>
+                </div>
+            </a>
+
+            <a href="https://t.me/+2xTSPt1ZS9pjMTA1" target="_blank" class="glass-card flex items-center justify-between p-5 rounded-2xl group">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-sky-600/20 flex items-center justify-center text-sky-400 group-hover:scale-110 transition-transform">
+                        ✈️
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white">Telegram</h3>
+                        <p class="text-xs text-slate-500">Community Channel</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20">
+                    <span class="status-pulse">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-emerald-400 text-[10px] font-black uppercase tracking-tighter">Live</span>
+                </div>
+            </a>
+
+            <a href="https://discord.gg/UzHzerb6XY" target="_blank" class="glass-card flex items-center justify-between p-5 rounded-2xl group">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-600/20 flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform">
+                        🎮
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white">Discord</h3>
+                        <p class="text-xs text-slate-500">Chat & Support</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20">
+                    <span class="status-pulse">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-emerald-400 text-[10px] font-black uppercase tracking-tighter">Live</span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="mt-12 text-center">
+            <p class="text-[10px] text-slate-600 uppercase tracking-[0.3em] mb-2">Authenticated System</p>
+            <div class="h-[1px] w-12 bg-slate-800 mx-auto"></div>
+        </div>
+    </div>
+
+</body>
+</html>
